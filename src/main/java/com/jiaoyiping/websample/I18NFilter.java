@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.Locale;
 
-@WebFilter(urlPatterns = "/*")
+@WebFilter(urlPatterns = "/*", asyncSupported = true)
 public class I18NFilter implements Filter {
     private static final String COOKIE_LANGUAGE = "cookie_language";
     private static final String SYSTEM_LANGUAGE = "system_language";
